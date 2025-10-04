@@ -77,7 +77,3 @@ Minimal WordPress Full Site Editing (FSE) starter theme pre-configured with Tail
 ## License
 
 Released under the GPL v2 (or later), matching WordPress core requirements.
-
----
-
-_Napomena:_ README je napisan na engleskom radi GitHub publike, ali struktura projekta i komentari u kodu su jednostavni za dalju nadogradnju na srpskom jeziku.
