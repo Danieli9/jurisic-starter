@@ -1,0 +1,22 @@
+{
+  "name": "jurisic-starter-theme",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tailwind-powered WordPress block theme starter.",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm-run-all --parallel watch:*",
+    "watch:frontend": "tailwindcss -c tailwind.config.js -i ./src/css/frontend.css -o ./assets/css/frontend.css --watch",
+    "watch:editor": "tailwindcss -c tailwind.config.js -i ./src/css/editor.css -o ./assets/css/editor.css --watch",
+    "build": "npm-run-all build:*",
+    "build:frontend": "tailwindcss -c tailwind.config.js -i ./src/css/frontend.css -o ./assets/css/frontend.css --minify",
+    "build:editor": "tailwindcss -c tailwind.config.js -i ./src/css/editor.css -o ./assets/css/editor.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.17",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.4"
+  }
+}

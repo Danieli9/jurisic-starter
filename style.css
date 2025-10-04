@@ -1,0 +1,17 @@
+/*
+Theme Name: Jurisic Starter
+Theme URI: https://example.com/
+Author: Danijel Jurisic
+Author URI: https://example.com/
+Description: Minimalist WordPress block theme starter with Tailwind CSS integration.
+Version: 0.1.0
+Requires at least: 6.3
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: jurisic
+Tags: full-site-editing, blog, editor-style, custom-colors
+*/
+
+/* The actual styles are built with Tailwind and output to assets/css/frontend.css */

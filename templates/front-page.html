@@ -1,0 +1,61 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}}} -->
+<main class="wp-block-group" style="padding-top:3rem;padding-bottom:3rem">
+	<!-- wp:group {"align":"wide","layout":{"type":"constrained"},"className":"space-y-20"} -->
+	<div class="wp-block-group alignwide space-y-20">
+		<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem","right":"3rem","left":"3rem"}},"border":{"radius":"1.5rem"}},"backgroundColor":"base","className":"text-center shadow-xl"} -->
+		<div class="wp-block-group text-center shadow-xl has-base-background-color" style="border-radius:1.5rem;padding-top:3rem;padding-right:3rem;padding-bottom:3rem;padding-left:3rem">
+			<!-- wp:site-tagline {"className":"uppercase tracking-[0.35em] text-accent text-sm"} /-->
+
+			<!-- wp:heading {"textAlign":"center","level":1,"className":"text-5xl font-extrabold tracking-tight"} -->
+			<h1 class="wp-block-heading has-text-align-center text-5xl font-extrabold tracking-tight">Welcome to the Jurisic Starter Theme</h1>
+			<!-- /wp:heading -->
+
+			<!-- wp:paragraph {"align":"center","className":"text-lg text-neutral/80"} -->
+			<p class="has-text-align-center text-lg text-neutral/80">Kickstart modern WordPress projects with Tailwind CSS and Full Site Editing support.</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
+			<div class="wp-block-buttons">
+				<!-- wp:button {"className":"btn"} -->
+				<div class="wp-block-button btn"><a class="wp-block-button__link wp-element-button">Start Building</a></div>
+				<!-- /wp:button -->
+
+				<!-- wp:button {"className":"is-style-outline"} -->
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">Learn More</a></div>
+				<!-- /wp:button -->
+			</div>
+			<!-- /wp:buttons -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"},"displayLayout":{"type":"grid","columns":3}} -->
+		<div class="wp-block-query">
+			<!-- wp:post-template {"className":"grid gap-6 md:grid-cols-3"} -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"1.25rem"},"border":{"width":"1px","style":"solid","color":"#e5e7eb"},"padding":{"top":"2rem","right":"2rem","bottom":"2rem","left":"2rem"}},"className":"rounded-xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"} -->
+			<div class="wp-block-group rounded-xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg" style="border-color:#e5e7eb;border-width:1px;border-style:solid;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem">
+				<!-- wp:post-featured-image {"isLink":true,"className":"rounded-lg"} /-->
+
+				<!-- wp:post-title {"isLink":true,"className":"text-2xl font-semibold"} /-->
+
+				<!-- wp:post-excerpt {"showMoreOnNewLine":false,"className":"text-neutral/70"} /-->
+
+				<!-- wp:post-date {"format":"j. F Y","style":{"typography":{"fontSize":"0.875rem"}},"className":"text-neutral/50"} /-->
+			</div>
+			<!-- /wp:group -->
+			<!-- /wp:post-template -->
+
+			<!-- wp:query-no-results -->
+			<!-- wp:paragraph {"align":"center","className":"text-neutral/60"} -->
+			<p class="has-text-align-center text-neutral/60">No posts published yet.</p>
+			<!-- /wp:paragraph -->
+			<!-- /wp:query-no-results -->
+		</div>
+		<!-- /wp:query -->
+	</div>
+	<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
