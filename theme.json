@@ -1,8 +1,9 @@
 {
-  "$schema": "https://schemas.wp.org/wp/6.5/theme.json",
-  "version": 2,
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
   "settings": {
     "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
     "color": {
       "palette": [
         { "slug": "base", "name": "Base", "color": "#f4f4f5" },
@@ -11,27 +12,27 @@
       ],
       "gradients": []
     },
-    "custom": {
-      "layout": {
-        "contentSize": "700px",
-        "wideSize": "1200px"
-      }
-    },
     "layout": {
       "wideSize": "1200px",
-      "contentSize": "700px"
+      "contentSize": "700px",
+      "allowEditing": true
     },
     "spacing": {
       "units": ["px", "em", "rem", "%", "vh", "vw"],
-      "spacingScale": {
-        "step": 0,
-        "medium": "1.5rem"
-      }
+      "defaultSpacingSizes": false,
+      "spacingSizes": [
+        { "slug": "20", "size": "0.75rem", "label": "XS" },
+        { "slug": "40", "size": "1.5rem", "label": "S" },
+        { "slug": "50", "size": "2.25rem", "label": "SM" },
+        { "slug": "60", "size": "3rem", "label": "M" },
+        { "slug": "80", "size": "4.5rem", "label": "L" }
+      ]
     },
     "typography": {
+      "fluid": true,
       "fontFamilies": [
         {
-          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", sans-serif",
+          "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
           "name": "Inter",
           "slug": "inter"
         }
@@ -45,6 +46,10 @@
     }
   },
   "styles": {
+    "layout": {
+      "contentSize": "700px",
+      "wideSize": "1200px"
+    },
     "color": {
       "background": "var(--wp--preset--color--base)",
       "text": "var(--wp--preset--color--neutral)"
@@ -59,6 +64,12 @@
     { "name": "footer", "title": "Footer", "area": "footer" }
   ],
   "templates": {
+    "index": {
+      "title": "Index"
+    },
+    "home": {
+      "title": "Blog Home"
+    },
     "front-page": {
       "title": "Front Page"
     },
@@ -67,6 +78,12 @@
     },
     "archive": {
       "title": "Archive"
+    },
+    "page": {
+      "title": "Page"
+    },
+    "404": {
+      "title": "404"
     }
   }
 }

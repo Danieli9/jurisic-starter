@@ -5,7 +5,9 @@ Minimal WordPress Full Site Editing (FSE) starter theme pre-configured with Tail
 ## Features
 
 - Full Site Editing ready (templates + template parts)
+- Layout presets with adjustable content/wide widths via Site Editor
 - Tailwind CSS 3 with typography plugin and editor styles
+- Curated block patterns (hero CTA, feature grid) to speed up page builds
 - Modern block-based header, footer, front page, archive, single, page, and 404 templates
 - Asset loading helper with cache busting for compiled CSS
 - Clean project structure and developer tooling out of the box

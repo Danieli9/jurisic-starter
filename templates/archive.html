@@ -1,34 +1,10 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}}} -->
-<main class="wp-block-group" style="padding-top:3rem;padding-bottom:3rem">
-	<!-- wp:group {"align":"wide","layout":{"type":"default"},"className":"space-y-12"} -->
-	<div class="wp-block-group alignwide space-y-12">
-		<!-- wp:query-title {"type":"archive","textAlign":"left","className":"text-4xl font-bold"} /-->
-
-		<!-- wp:term-description {"className":"text-neutral/70"} /-->
-
-		<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"}} -->
-		<div class="wp-block-query">
-			<!-- wp:post-template {"className":"space-y-10"} -->
-			<!-- wp:group {"style":{"spacing":{"blockGap":"0.75rem"}},"className":"space-y-3 border-b border-neutral/15 pb-8"} -->
-			<div class="wp-block-group space-y-3 border-b border-neutral/15 pb-8">
-				<!-- wp:post-title {"isLink":true,"className":"text-3xl font-semibold"} /-->
-				<!-- wp:post-excerpt {"showMoreOnNewLine":false,"className":"text-neutral/80"} /-->
-				<!-- wp:post-date {"style":{"typography":{"fontSize":"0.875rem"}},"className":"text-neutral/60"} /-->
-			</div>
-			<!-- /wp:group -->
-			<!-- /wp:post-template -->
-
-			<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"},"className":"items-center pt-8"} -->
-			<!-- wp:query-pagination-previous /-->
-			<!-- wp:query-pagination-numbers /-->
-			<!-- wp:query-pagination-next /-->
-			<!-- /wp:query-pagination -->
-		</div>
-		<!-- /wp:query -->
-	</div>
-	<!-- /wp:group -->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)">
+	<!-- wp:query-title {"type":"archive"} /-->
+	<!-- wp:term-description /-->
+	<!-- wp:pattern {"slug":"jurisic/posts-query"} /-->
 </main>
 <!-- /wp:group -->
 
